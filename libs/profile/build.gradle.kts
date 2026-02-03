@@ -18,6 +18,9 @@ java {
     toolchain {
         languageVersion.set(JavaLanguageVersion.of(21))
     }
+    // Ensure reproducible builds for better caching
+    withJavadocJar()
+    withSourcesJar()
 }
 
 dependencies {
@@ -28,6 +31,21 @@ dependencies {
 
 tasks.test {
     useJUnitPlatform()
+}
+
+// Make JAR task reproducible for build cache
+tasks.withType<Jar> {
+    // Preserve file timestamps for reproducibility
+    isPreserveFileTimestamps = false
+    isReproducibleFileOrder = true
+
+    // Don't include timestamps in manifest
+    manifest {
+        attributes(
+            "Implementation-Title" to project.name,
+            "Implementation-Version" to project.version
+        )
+    }
 }
 
 
