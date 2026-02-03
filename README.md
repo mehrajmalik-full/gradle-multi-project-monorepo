@@ -2,6 +2,10 @@
 
 This repository demonstrates a Gradle-based multi-project monorepo using **Java 21** and **Gradle Composite Builds**.
 
+## 📖 Documentation
+
+**[→ Read the Complete Monorepo Guide](MONOREPO_GUIDE.md)** - Covers everything you need to know about working with this monorepo, including CI/CD, caching, and IDE configuration.
+
 ## 🏗️ Project Structure
 
 This monorepo contains:
