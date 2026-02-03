@@ -7,4 +7,7 @@ public class Profile {
     public String getCurrentProfile() {
         return "Alice";
     }
+    public int sum(int a, int b) {
+        return a + b;
+    }
 }
