@@ -5,6 +5,6 @@ package profile;
 
 public class Profile {
     public String getCurrentProfile() {
-        return "Alice";
+        return "Mehraj v1";
     }
 }
