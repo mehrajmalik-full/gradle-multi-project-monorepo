@@ -1,4 +1,4 @@
-name: Build inventory-app
+vname: Build inventory-app
 on:
   push:
     paths:
