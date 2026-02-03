@@ -109,7 +109,7 @@ dependencies {
 - Gradle automatically resolves composite dependencies
 - Clear module boundaries
 - Easy to extract a module to its own repo later
-- Better IDE support
+- Better IDE integration (separate module compilation and navigation)
 
 ---
 
@@ -210,7 +210,7 @@ Caches:
 - `main` branch: Read-write (updates cache)
 - Feature branches: Read-only (uses cache, doesn't update)
 
-This prevents feature branches from polluting the cache.
+This prevents feature branches from overwriting main branch cache entries with potentially unstable or experimental builds.
 
 #### 3. Task Output Cache (via `--build-cache`)
 
@@ -438,6 +438,8 @@ class AccountAppTest {
         String greeting = app.getGreeting();
         
         // Tests integration with both greeter and profile libs
+        // "Alice" comes from Profile.getCurrentProfile()
+        // "Hello world" comes from Greeter.getGreeting()
         assertTrue(greeting.contains("Alice"));
         assertTrue(greeting.contains("Hello world"));
     }
