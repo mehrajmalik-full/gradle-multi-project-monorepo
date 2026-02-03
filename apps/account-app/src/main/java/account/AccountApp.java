@@ -15,5 +15,9 @@ public class AccountApp {
     public static void main(String[] args) {
         System.out.println("[account-service]: " + new AccountApp().getGreeting());
     }
+
+    public int sum(int a, int b) {
+        return a + b;
+    }
 }
 
