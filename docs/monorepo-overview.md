@@ -100,6 +100,8 @@ dependencies {
 ## IDE Tips (IntelliJ/VS Code)
 - [IntelliJ Workspaces](https://blog.jetbrains.com/idea/2024/08/workspaces-in-intellij-idea/): use Workspaces to save/load module subsets without reconfiguring the project.
 - [Introduction to Workspaces in IntelliJ IDEA YouTube](https://www.youtube.com/watch?v=ewe8AgP7oUE&t=997s)
+  - We can load/unload modules as needed, IntelliJ will only index the active ones. 
+  - We can create multiple workspaces with different projects/modules for different tasks (e.g., one for backend work, another for frontend).
 - [Building a Gradle-based Monorepo by Doordash](https://www.youtube.com/watch?v=j20SKXiPsnM&t=2s)
 - [Composite Builds with Gradle](https://www.youtube.com/watch?v=l96SMQX3zkU)
 - Open the repo root, then in the Gradle tool window refresh after commenting/uncommenting `includeBuild` entries to limit indexing.
