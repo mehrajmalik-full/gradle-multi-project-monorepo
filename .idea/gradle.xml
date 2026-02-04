@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
@@ -16,11 +17,6 @@
                   <project path="$PROJECT_DIR$/libs/greeter" />
                 </projects>
               </build>
-              <build path="$PROJECT_DIR$/apps/inventory-app" name="inventory-app">
-                <projects>
-                  <project path="$PROJECT_DIR$/apps/inventory-app" />
-                </projects>
-              </build>
               <build path="$PROJECT_DIR$/libs/profile" name="profile">
                 <projects>
                   <project path="$PROJECT_DIR$/libs/profile" />
@@ -35,7 +31,6 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/apps/account-app" />
-            <option value="$PROJECT_DIR$/apps/inventory-app" />
             <option value="$PROJECT_DIR$/libs/greeter" />
             <option value="$PROJECT_DIR$/libs/profile" />
           </set>

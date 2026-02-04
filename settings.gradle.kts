@@ -7,11 +7,10 @@
 
 rootProject.name = "gradle-multi-project-monorepo"
 
-// Include library modules as composite builds
+// Include only selected modules for testing selective loading
 includeBuild("libs/greeter")
-includeBuild("libs/profile")
-
-// Include application modules as composite builds
 includeBuild("apps/account-app")
-includeBuild("apps/inventory-app")
 
+// Commented out other modules to exclude them from the build
+// includeBuild("libs/profile")
+// includeBuild("apps/inventory-app")
